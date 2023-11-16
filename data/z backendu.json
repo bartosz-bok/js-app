@@ -1,0 +1,29 @@
+[
+  {
+      "id": 1,
+      "event_name": "I wojna Å›wiatowa",
+      "start_date": "1914-07-28",
+      "end_date": "1918-11-11",
+      "description": "NajwiÄ™kszy konflikt zbrojny w Europie od czasu wojen napoleoÅ„skich.",
+      "image_url": "link-do-zdjecia/WW1.jpg",
+      "category_id": 1
+  },
+  {
+      "id": 2,
+      "event_name": "II wojna Å›wiatowa",
+      "start_date": "1939-09-01",
+      "end_date": "1945-09-02",
+      "description": "NajwiÄ™ksza i najkrwawsza wojna w dziejach, zaliczana do wojen totalnych",
+      "image_url": "link-do-zdjecia/WW2.jpg",
+      "category_id": 1
+  },
+  {
+      "id": 3,
+      "event_name": "Wojna wietnamska",
+      "start_date": "1955-11-01",
+      "end_date": "1975-04-30",
+      "description": "DziaÅ‚ania militarne na PÃ³Å‚wyspie IndochiÅ„skim.",
+      "image_url": "link-do-zdjecia/VW.jpg",
+      "category_id": 5
+  }
+]

@@ -1,0 +1,13 @@
+.eventList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Optionally, you can add a container style for the entire component */
+.eventListContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
