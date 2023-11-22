@@ -1,20 +1,20 @@
 [
   {
       "id": 1,
-      "event_name": "I wojna Å›wiatowa",
+      "event_name": "I wojna swiatowa",
       "start_date": "1914-07-28",
       "end_date": "1918-11-11",
-      "description": "NajwiÄ™kszy konflikt zbrojny w Europie od czasu wojen napoleoÅ„skich.",
-      "image_url": "link-do-zdjecia/WW1.jpg",
+      "description": "Pierwsza wojna swiatowa wybuchka na skutek skomplikowanego systemu sojuszniczego i narastajacych napiec w Europie, zwiazanych z terytorialnymi roszczeniami, zbrojeniami i konkurencja imperialistyczna. Konflikt przyniosl ogromne straty ludzkie, z milionami ofiar. Jego zakonczenie w 1918 roku wplynelo na ksztaltowanie sie nowego porzadku politycznego i spolecznego na arenie miedzynarodowej.",
+      "image_url": "https://assets.editorial.aetnd.com/uploads/2009/10/world-war-one-gettyimages-90007631.jpg",
       "category_id": 1
   },
   {
       "id": 2,
-      "event_name": "II wojna Å›wiatowa",
+      "event_name": "II wojna swiatowa",
       "start_date": "1939-09-01",
       "end_date": "1945-09-02",
-      "description": "NajwiÄ™ksza i najkrwawsza wojna w dziejach, zaliczana do wojen totalnych",
-      "image_url": "link-do-zdjecia/WW2.jpg",
+      "description": "Druga wojna swiatowa trwaka od 1939 do 1945 roku i byla globalnym konfliktem zbrojnym, w ktorym uczestniczyly glowne mocarstwa swiata. Wybuchla po inwazji Niemiec na Polske, co spowodowalo reakcje ze strony Wielkiej Brytanii i Francji. Konflikt zakonczyl sie kapitulacja Niemiec i Japonii w 1945 roku.",
+      "image_url": "https://cdn.britannica.com/26/188426-050-2AF26954/Germany-Poland-September-1-1939.jpg",
       "category_id": 1
   },
   {
@@ -22,8 +22,8 @@
       "event_name": "Wojna wietnamska",
       "start_date": "1955-11-01",
       "end_date": "1975-04-30",
-      "description": "DziaÅ‚ania militarne na PÃ³Å‚wyspie IndochiÅ„skim.",
-      "image_url": "link-do-zdjecia/VW.jpg",
+      "description": "Wojna w Wietnamie trwala od 1955 do 1975 roku i byla jednym z najbardziej skomplikowanych konfliktow zimnej wojny. Stany Zjednoczone wspieraly rzad Poludniowego Wietnamu w walce z komunistyczna Polnoca, angazujac duze sily wojskowe. Wojna jednak zakonczyla sie zwyciestwem Polnocnej strony.",
+      "image_url": "https://assets.editorial.aetnd.com/uploads/2009/10/vietnam-war-gettyimages-615208290.jpg",
       "category_id": 5
   }
 ]

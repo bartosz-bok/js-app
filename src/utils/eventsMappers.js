@@ -15,19 +15,18 @@ const getCategoryIcon = (continentId) => {
   }
 };
 
-export const mapRawToTimeline = (events) =>
+export const mapEventsToTimeline = (events) =>
   events.map((event) => {
-    const startDate = new Date(event.start_date);
-    const endDate = new Date(event.end_date);
+    const startDate = new Date(event.startDate);
+    const endDate = new Date(event.endDate);
     return {
       text: {
-        headline: event.event_name,
+        headline: event.eventName,
         text: event.description,
       },
       media: {
-        url: event.image_url,
-        // caption: 'Mozna dodac podpisy do zdjec tez.',
-        thumbnail: getCategoryIcon(event.category_id),
+        url: event.imageUrl,
+        thumbnail: getCategoryIcon(event.categoryId),
       },
       start_date: {
         month: startDate.getMonth() + 1,

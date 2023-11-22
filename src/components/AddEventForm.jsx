@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { addEvent } from '../api';
 import { EventForm } from './EventForm';
+import useStore from '../store';
 
 const AddEventForm = ({ hideAddEventForm }) => {
   const [eventName, setEventName] = useState('');
@@ -11,6 +11,11 @@ const AddEventForm = ({ hideAddEventForm }) => {
   const [categoryId, setCategoryId] = useState('');
   const [error, setError] = useState('');
 
+  const { events, addEvent } = useStore((state) => ({
+    addEvent: state.addEvent,
+    events: state.events,
+  }));
+
   const handleAddEvent = async (e) => {
     e.preventDefault();
     setError('');
@@ -20,27 +25,24 @@ const AddEventForm = ({ hideAddEventForm }) => {
       return;
     }
 
-    try {
-      await addEvent({
-        eventName,
-        startDate,
-        endDate,
-        description,
-        imageUrl,
-        categoryId,
-      });
+    addEvent({
+      eventName,
+      startDate,
+      endDate,
+      description,
+      imageUrl,
+      categoryId,
+    });
 
-      setEventName('');
-      setStartDate('');
-      setEndDate('');
-      setDescription('');
-      setImageUrl('');
-      setCategoryId('');
-      hideAddEventForm();
-      setTimeout(() => window.location.reload(), 500); // TODO: replace with a more React-y way
-    } catch (error) {
-      setError(error);
-    }
+    console.log(events);
+
+    setEventName('');
+    setStartDate('');
+    setEndDate('');
+    setDescription('');
+    setImageUrl('');
+    setCategoryId('');
+    hideAddEventForm();
   };
 
   return (

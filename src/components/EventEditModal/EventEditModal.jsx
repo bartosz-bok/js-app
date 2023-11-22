@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { EventForm } from '../EventForm/';
 import styles from './styles.module.css';
-import { editEvent } from '../../api';
+import useStore from '../../store';
 
 export const EventEditModal = ({ isOpen, onClose, eventData }) => {
   const [eventName, setEventName] = useState(eventData?.eventName);
@@ -11,6 +11,10 @@ export const EventEditModal = ({ isOpen, onClose, eventData }) => {
   const [imageUrl, setImageUrl] = useState(eventData?.imageUrl);
   const [categoryId, setCategoryId] = useState(eventData?.categoryId);
   const [error, setError] = useState('');
+
+  const { editEvent } = useStore((state) => ({
+    editEvent: state.editEvent,
+  }));
 
   const handleAddEvent = async (e) => {
     e.preventDefault();
@@ -22,7 +26,7 @@ export const EventEditModal = ({ isOpen, onClose, eventData }) => {
     }
 
     try {
-      await editEvent({
+      editEvent({
         id: eventData.id,
         eventName,
         startDate,
@@ -39,7 +43,6 @@ export const EventEditModal = ({ isOpen, onClose, eventData }) => {
       setImageUrl('');
       setCategoryId('');
       onClose();
-      // window.location.reload(); // TODO: replace with a more React-y way
     } catch (error) {
       setError(error);
     }

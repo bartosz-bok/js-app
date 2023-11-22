@@ -1,4 +1,5 @@
 import jsPDF from 'jspdf';
+import { Link } from 'react-router-dom';
 
 const getImageDimensions = (url) => {
   return new Promise((resolve, reject) => {
@@ -63,8 +64,11 @@ export const DownloadPDFButton = ({ data }) => {
   };
 
   return (
-    <button style={{ position: 'absolute', zIndex: '999' }} onClick={handleDownloadPDF}>
-      Download PDF
-    </button>
+    <>
+      <Link to="/admin">Go to events editor</Link>
+      <button style={{ position: 'absolute', zIndex: '999' }} onClick={handleDownloadPDF}>
+        Download PDF
+      </button>
+    </>
   );
 };
